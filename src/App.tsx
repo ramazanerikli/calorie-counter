@@ -112,6 +112,7 @@ function App() {
             <Modal
               onSelectFood={setSelectedFood}
               selectedFood={selectedFood}
+              selectedDay={selectedDay}
               onProcess={(foodEaten) => {
                 const foodsEatenNew = [
                   ...foodsEaten,
@@ -126,6 +127,7 @@ function App() {
                 ];
                 setFoodsEaten(foodsEatenNew);
                 saveToLocalStorage(foodsEatenNew);
+                console.log(new Date(selectedDay))
               }}
               foodList={foodList}
               selectedMeal={selectedMeal}

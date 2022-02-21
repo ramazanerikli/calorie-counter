@@ -7,10 +7,11 @@ export const Modal: FC<{
   foodList: Food[];
   selectedMeal: string;
   foodsEaten: FoodEaten[];
+  selectedDay: number;
   onProcess: (foodEaten: FoodEaten) => void;
   selectedFood: Food|null;
   onSelectFood: (food: Food) => void;
-}> = ({ foodList, selectedMeal, onProcess, foodsEaten, selectedFood, onSelectFood }) => {
+}> = ({ foodList, selectedMeal, onProcess, foodsEaten, selectedFood, onSelectFood, selectedDay }) => {
   const [quantity, setQuantity] = useState<number>(1);
   const [showFilteredFoods, setShowFilteredFoods] = useState<boolean>(false);
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -181,7 +182,7 @@ export const Modal: FC<{
                       ...selectedFood,
                       meal: selectedMeal || "breakfast",
                       quantity,
-                      date: Number(new Date()),
+                      date: Number(selectedDay + 1),
                     };
                     onProcess(foodEaten);
                     setQuantity(1);
