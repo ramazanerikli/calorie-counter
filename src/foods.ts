@@ -2,7 +2,7 @@ const foods = [
     {
         id: "muz",
         name: "banana",
-        image: "/food-icons/banana.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/banana.png",
         calories: 89,
         protein: 1.1,
         carbs: 22.8,
@@ -11,7 +11,7 @@ const foods = [
       {
         id: "fistik",
         name: "peanut butter",
-        image: "/food-icons/peanut-butter.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/peanut-butter.png",
         calories: 94,
         protein: 4,
         carbs: 3.1,
@@ -20,7 +20,7 @@ const foods = [
       {
         id: "siyah cikolata",
         name: "dark chocolate",
-        image: "/food-icons/chocolate.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/chocolate.png",
         calories: 170,
         protein: 2.2,
         carbs: 13,
@@ -29,7 +29,7 @@ const foods = [
       {
         id: "pilav",
         name: "rice",
-        image: "/food-icons/rice.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/rice.png",
         calories: 205,
         protein: 4.3,
         carbs: 44.5,
@@ -38,7 +38,7 @@ const foods = [
       {
         id: "elma",
         name: "apple",
-        image: "/food-icons/apple.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/apple.png",
         calories: 93,
         protein: 0.5,
         carbs: 24.7,
@@ -47,7 +47,7 @@ const foods = [
       {
         id: "havuc",
         name: "carrot",
-        image: "/food-icons/carrot.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/carrot.png",
         calories: 25,
         protein: 1,
         carbs: 6,
@@ -56,7 +56,7 @@ const foods = [
       {
         id: "salatalik",
         name: "cucumber",
-        image: "/food-icons/cucumber.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/cucumber.png",
 
         calories: 18,
         protein: 0.78,
@@ -66,7 +66,7 @@ const foods = [
       {
         id: "haslanmisyumurta",
         name: "egg boiled",
-        image: "/food-icons/egg-boiled.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/egg-boiled.png",
         calories: 77,
         protein: 6.3,
         carbs: 0.6,
@@ -75,7 +75,7 @@ const foods = [
       {
         id: "tavadayumurta",
         name: "egg scrambled",
-        image: "/food-icons/egg-scrambled.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/egg-scrambled.png",
         calories: 91,
         protein: 6,
         carbs: 1,
@@ -84,7 +84,7 @@ const foods = [
       {
         id: "patates",
         name: "potato boiled",
-        image: "/food-icons/potato.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/potato.png",
         calories: 134,
         protein: 2.7,
         carbs: 31.2,
@@ -93,7 +93,7 @@ const foods = [
       {
         id: "domates",
         name: "tomato",
-        image: "/food-icons/tomato.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/tomato.png",
         calories: 20,
         protein: 0.97,
         carbs: 4.28,
@@ -102,7 +102,7 @@ const foods = [
       {
         id: "beyazpeynir",
         name: "white cheese",
-        image: "/food-icons/cheese.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/cheese.png",
         calories: 93,
         protein: 6.11,
         carbs: 0.76,
@@ -111,7 +111,7 @@ const foods = [
       {
         id: "kasarpeyniri",
         name: "cheddar cheese",
-        image: "/food-icons/cheese.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/cheese.png",
         calories: 71,
         protein: 5.4,
         carbs: 0.51,
@@ -121,7 +121,7 @@ const foods = [
         id: "salam",
         name: "salam",
         image:
-          "https://s3.amazonaws.com/img.mynetdiary.com/bean/i219.png",
+          "https://ramazanerikli.github.io/calorie-counter/food-icons/salam.png",
         calories: 45,
         protein: 1.64,
         carbs: 0.64,
@@ -130,7 +130,7 @@ const foods = [
       {
         id: "marul",
         name: "marul",
-        image: "/food-icons/marul.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/marul.png",
         calories: 16,
         protein: 0.9,
         carbs: 1.7,
@@ -139,7 +139,7 @@ const foods = [
       {
         id: "mercimek",
         name: "mercimek",
-        image: "/food-icons/soup.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/soup.png",
         calories: 139,
         protein: 9.3,
         carbs: 20.2,
@@ -148,7 +148,7 @@ const foods = [
       {
         id: "yapraksarma",
         name: "sarma",
-        image: "/food-icons/dolma.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/dolma.png",
         calories: 125,
         protein: 4.38,
         carbs: 23.16,
@@ -157,7 +157,7 @@ const foods = [
       {
         id: "bal",
         name: "honey",
-        image: "/food-icons/honey.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/honey.png",
         calories: 30,
         protein: 0.04,
         carbs: 8.24,
@@ -166,7 +166,7 @@ const foods = [
       {
         id: "pirasa",
         name: "pırasa yemeği",
-        image: "/food-icons/pirasa.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/pirasa.png",
         calories: 183,
         protein: 3.58,
         carbs: 20.37,
@@ -175,7 +175,7 @@ const foods = [
       {
         id: "tarhana",
         name: "tarhana",
-        image: "/food-icons/soup.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/soup.png",
         calories: 181,
         protein: 6.9,
         carbs: 14.96,
@@ -184,7 +184,7 @@ const foods = [
       {
         id: "ispanak",
         name: "spinach cooked",
-        image: "/food-icons/spinach.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/spinach.png",
         calories: 133,
         protein: 4.46,
         carbs: 10,
@@ -193,7 +193,7 @@ const foods = [
       {
         id: "ekmek",
         name: "Bread",
-        image: "/food-icons/bread.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/bread.png",
         calories: 69,
         protein: 3.5,
         carbs: 11.3,
@@ -202,7 +202,7 @@ const foods = [
       {
         id: "tonbaligi",
         name: "tuna fish",
-        image: "/food-icons/fish.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/fish.png",
         calories: 154,
         protein: 18,
         carbs: 0.7,
@@ -211,7 +211,7 @@ const foods = [
       {
         id: "gozleme",
         name: "Patatesli gozleme",
-        image: "/food-icons/potato.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/potato.png",
         calories: 393,
         protein: 10.96,
         carbs: 77,
@@ -220,7 +220,7 @@ const foods = [
       {
         id: "patateskizartmasi",
         name: "potato fries",
-        image: "/food-icons/potato-fries.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/potato-fries.png",
         calories: 312,
         protein: 3.43,
         carbs: 41.44,
@@ -229,7 +229,7 @@ const foods = [
       {
         id: "patateskizartmasi",
         name: "kaymak",
-        image: "/food-icons/kaymak.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/kaymak.png",
         calories: 29,
         protein: 0.05,
         carbs: 0.17,
@@ -238,7 +238,7 @@ const foods = [
       {
         id: "kek",
         name: "chocolate cake",
-        image: "/food-icons/cake.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/cake.png",
         calories: 268,
         protein: 3.94,
         carbs: 31.2,
@@ -247,7 +247,7 @@ const foods = [
       {
         id: "caseykek",
         name: "casey chocolate cake",
-        image: "/food-icons/cake.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/cake.png",
         calories: 74,
         protein: 0.72,
         carbs: 9.32,
@@ -256,7 +256,7 @@ const foods = [
       {
         id: "halley",
         name: "Ülker Halley",
-        image: "/food-icons/cake.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/cake.png",
         calories: 132,
         protein: 1.2,
         carbs: 20.31,
@@ -265,7 +265,7 @@ const foods = [
       {
         id: "patlamismisir",
         name: "popcorn",
-        image: "/food-icons/popcorn.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/popcorn.png",
         calories: 140,
         protein: 1.73,
         carbs: 10.6,
@@ -274,7 +274,7 @@ const foods = [
       {
         id: "kiymaliborek",
         name: "kıymalı kol böreği",
-        image: "/food-icons/gozleme.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/gozleme.png",
         calories: 195,
         protein: 7.77,
         carbs: 28.7,
@@ -283,7 +283,7 @@ const foods = [
       {
         id: "manti",
         name: "Manti",
-        image: "/food-icons/manti.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/manti.png",
         calories: 322,
         protein: 7.83,
         carbs: 56.45,
@@ -292,7 +292,7 @@ const foods = [
       {
         id: "siyahzeytin",
         name: "black olives",
-        image: "/food-icons/olives.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/olives.png",
         calories: 8,
         protein: 0.7,
         carbs: 0.4,
@@ -301,7 +301,7 @@ const foods = [
       {
         id: "pisi",
         name: "fried dough",
-        image: "/food-icons/hamur.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/hamur.png",
         calories: 122,
         protein: 3.75,
         carbs: 23,
@@ -310,7 +310,7 @@ const foods = [
       {
         id: "yogurt",
         name: "yogurt",
-        image: "/food-icons/yogurt.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/yogurt.png",
         calories: 122,
         protein: 6.94,
         carbs: 9.32,
@@ -319,7 +319,7 @@ const foods = [
       {
         id: "findik",
         name: "findik",
-        image: "/food-icons/findik.png",
+        image: "https://ramazanerikli.github.io/calorie-counter/food-icons/findik.png",
         calories: 7,
         protein: 0.11,
         carbs: 0.1,
