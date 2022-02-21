@@ -20,7 +20,7 @@ function App() {
     localFoods = [];
   }
 
-  const [selectedFood, setSelectedFood] = useState<Food|null>(null);
+  const [selectedFood, setSelectedFood] = useState<Food | null>(null);
 
   const saveToLocalStorage = (foodsEaten: any) => {
     localStorage.setItem("eatenFoods", JSON.stringify(foodsEaten));
@@ -35,15 +35,17 @@ function App() {
   );
 
   const today = new Date();
-  const [selectedDay, setSelectedDay] = useState<CalendarDay>([today.getFullYear(), today.getMonth(), today.getDate()]);
-
+  const [selectedDay, setSelectedDay] = useState<CalendarDay>([
+    today.getFullYear(),
+    today.getMonth(),
+    today.getDate(),
+  ]);
 
   const filteredFoodsEaten = foodsEaten.filter((food) => {
     const foodDate = new Date();
     foodDate.setFullYear(food.date[0]);
     foodDate.setMonth(food.date[1]);
     foodDate.setDate(food.date[2]);
-    
 
     const today = new Date();
     today.setMonth(selectedDay[1]);
@@ -56,47 +58,56 @@ function App() {
     yesterday.setDate(selectedDay[2]);
     yesterday.setDate(yesterday.getDate() - 1);
 
-    return (foodDate <= today && foodDate > yesterday);
+    return foodDate <= today && foodDate > yesterday;
   });
   return (
-    <div className="app pt-4">
+    <div className="app">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-5">
-            <DateSwitcher
-              selectedDay={selectedDay}
-              goToNextDay={() => {
-                const today = new Date();
-                today.setMonth(selectedDay[1]);
-                today.setFullYear(selectedDay[0]);
-                today.setDate(selectedDay[2]);
-                today.setDate(today.getDate() + 1);
-                const tomorrow: CalendarDay = [today.getFullYear(), today.getMonth(), today.getDate()];
-                setSelectedDay(tomorrow);
-              }}
-              goToPreviousDay={() => {
-                const today = new Date();
-                today.setMonth(selectedDay[1]);
-                today.setFullYear(selectedDay[0]);
-                today.setDate(selectedDay[2]);
-                today.setDate(today.getDate() - 1);
-                const yesterday: CalendarDay = [today.getFullYear(), today.getMonth(), today.getDate()];
-                setSelectedDay(yesterday);
-              }}
-            />
+          <div className="app-header shadow-sm bg-white mt-4">
+            <div className="row">
+              <div className="col-lg-5">
+                <DateSwitcher
+                  selectedDay={selectedDay}
+                  goToNextDay={() => {
+                    const today = new Date();
+                    today.setMonth(selectedDay[1]);
+                    today.setFullYear(selectedDay[0]);
+                    today.setDate(selectedDay[2]);
+                    today.setDate(today.getDate() + 1);
+                    const tomorrow: CalendarDay = [
+                      today.getFullYear(),
+                      today.getMonth(),
+                      today.getDate(),
+                    ];
+                    setSelectedDay(tomorrow);
+                  }}
+                  goToPreviousDay={() => {
+                    const today = new Date();
+                    today.setMonth(selectedDay[1]);
+                    today.setFullYear(selectedDay[0]);
+                    today.setDate(selectedDay[2]);
+                    today.setDate(today.getDate() - 1);
+                    const yesterday: CalendarDay = [
+                      today.getFullYear(),
+                      today.getMonth(),
+                      today.getDate(),
+                    ];
+                    setSelectedDay(yesterday);
+                  }}
+                />
+              </div>
+              <div className="col-lg-7">
+                <CalorieBudget
+                  calorieBudget={calorieBudget}
+                  onChange={(event) => {
+                    const value = event.target.value;
+                    setCalorieBudget(Number(value));
+                    localStorage.setItem("calorieBudget", value);
+                  }}
+                />
+              </div>
+            </div>
           </div>
-
-          <div className="col-lg-7">
-            <CalorieBudget
-              calorieBudget={calorieBudget}
-              onChange={(event) => {
-                const value = event.target.value;
-                setCalorieBudget(Number(value));
-                localStorage.setItem("calorieBudget", value);
-              }}
-            />
-          </div>
-        </div>
 
         <div className="row">
           <div className="col-lg-5">
@@ -115,7 +126,7 @@ function App() {
                 foodsEaten={filteredFoodsEaten}
                 selectedMeal={selectedMeal}
                 onSelect={(food) => {
-                  setSelectedMeal(meal.name)
+                  setSelectedMeal(meal.name);
                   setSelectedFood(food);
                 }}
                 onDelete={(id) => {

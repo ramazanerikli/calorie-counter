@@ -81,7 +81,7 @@ export const Chart: FC<{
 
 
   return (
-    <div className="card border-0 chart-card d-flex align-items-center mt-5">
+    <div className="card border-0 chart-card d-flex align-items-center shadow-sm mt-4">
       <h6 className="chart-card-title fw-normal">Calorie Budget</h6>
       <span className="calorie-budget fw-bold fs-4 mb-3">{calorieBudget}</span>
       <CircularProgress

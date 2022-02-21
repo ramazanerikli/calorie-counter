@@ -15,7 +15,7 @@ export const MealCard: FC<{
 }> = ({ meal, foodsEaten, selectedMeal, foodList, onSelect, onDelete }) => {
 
   return (
-    <div className="card border-0 meal-card mb-3">
+    <div className="card border-0 meal-card shadow-sm mb-3">
       <div className="meal-card-header d-flex justify-content-between align-items-center">
         <h5 className="text-capitalize mb-0">{meal}</h5>
         <button

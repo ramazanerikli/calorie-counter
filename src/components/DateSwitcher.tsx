@@ -23,7 +23,7 @@ export const DateSwitcher: FC<{
         </button>
 
         <div className="current-date">
-        {dateObject.toLocaleString()}
+        {dateObject.toDateString()}
         </div>
 
         <button className="btn btn-transparent" aria-label="Get next day" title="Get next day" onClick={() => goToNextDay()}>

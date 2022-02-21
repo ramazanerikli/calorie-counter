@@ -1,3 +1,8 @@
 .container {
     max-width: $container-width;
 }
+
+.app-header {
+    height: 70px;
+    border-radius: $rounded-md;
+}
