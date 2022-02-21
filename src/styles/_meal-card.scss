@@ -1,0 +1,25 @@
+.meal-card {
+    border-radius: $rounded-md;
+    &:first-child {
+        margin-top: 3rem;
+    }
+    .meal-card-header {
+        padding: $padding-sm $padding-md;
+        border-bottom: 1px solid $light-gray;
+    }
+    .add-btn {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $green;
+        color: $white;
+    }
+}
+
+.meal-card-content {
+    .food-item {
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}

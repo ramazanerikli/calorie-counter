@@ -1,0 +1,47 @@
+    .food-item {
+        border-bottom: 1px solid $light-gray;
+        // padding: $padding-sm $padding-md;
+        cursor: pointer;
+    }
+    .food-nutrition {
+        width: 50px;
+        text-align: right;
+        &.carbs {
+            color: $carb-color;
+        }
+        &.protein {
+            color: $protein-color;
+        }
+        &.fat {
+            color: $fat-color;
+        }
+        &.calories {
+            color: $calorie-color;
+        }
+    }
+
+
+.food-nutrition-labels {
+    padding: $padding-sm $padding-md;
+    span {
+        color: $gray;
+    }
+}
+
+.meal-card-content {
+    overflow: hidden;
+}
+
+.remove-btn {
+    transition: all .3s;
+    margin-right: -50px;
+    border-radius: 0;
+    &.swiped {
+        transition: all .3s;
+        margin-right: 0;
+    }
+}
+
+.food-item-left {
+    padding: $padding-sm $padding-md;
+}

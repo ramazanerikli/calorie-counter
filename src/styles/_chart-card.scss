@@ -1,0 +1,11 @@
+.chart-card {
+    padding: $padding-md;
+    border-radius: $rounded-md;
+    .chart-card-title {
+        color: $gray;
+    }
+    .calorie-budget {
+        color: $accent-color;
+    }
+}
+

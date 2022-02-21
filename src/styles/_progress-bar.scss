@@ -1,0 +1,16 @@
+.nutrition-steps {
+    flex: 1 1;
+    > div {
+        flex: 1 1;
+    }
+}
+
+.bg-carbs {
+    background-color: $carb-color;
+}
+.bg-protein {
+    background-color: $protein-color;
+}
+.bg-fat {
+    background-color: $fat-color;
+}

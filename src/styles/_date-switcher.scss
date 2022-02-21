@@ -1,0 +1,8 @@
+.date-switcher {
+    border-radius: $rounded-md;
+    button {
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}

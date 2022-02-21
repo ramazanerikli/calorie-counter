@@ -1,0 +1,36 @@
+.nutrition-detail {
+    border-bottom: 1px solid #ebebeb;
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    &::before {
+        content: "";
+        width: 0.5em;
+        height: 0.5em;
+        min-width: 0.5em;
+        display: inline-block;
+        border-radius: 50%;
+    }
+    &.carbs {
+        &::before {
+            background-color: $carb-color;
+        }
+    }
+    &.protein {
+        &::before {
+            background-color: $protein-color;
+        }
+    }
+    &.fat {
+        &::before {
+            background-color: $fat-color;
+        }
+    }
+}
+
+.food-detail-options {
+    > div {
+        flex: 1;
+    }
+}
