@@ -9,7 +9,7 @@ A simple [calorie counting app](https://ramazanerikli.github.io/calorie-counter)
 - Set daily calorie and nutrient goals, see progress towards those goals in the daily log
 - Remove foods from your log
 - View food log for any day with using the date navigator
-- Observe the food's nutrition percentages through a donut chart
+- See the food's nutrition percentages through a donut chart
 
 ## Technology
 - TypeScript
