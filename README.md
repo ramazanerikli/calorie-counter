@@ -1,7 +1,6 @@
 # Calorie Counter 1.0.0
 
-A simple [calorie counting app](https:/ramazanerikli.github.io/calorie-counter) to track food nutritions.
-
+A simple [calorie counting app](https://ramazanerikli.github.io/calorie-counter) to track food nutritions.  
 
 ## Features 1.0.0
 
