@@ -10,6 +10,7 @@ import CalorieBudget from "./components/CalorieBudget";
 import DateSwitcher from "./components/DateSwitcher";
 
 import { v4 as generateUniqueId } from "uuid";
+import { CalendarDay } from "./types/Date";
 
 function App() {
   let localFoods;
@@ -34,20 +35,29 @@ function App() {
   );
 
   const today = new Date();
-  today.setHours(0);
-  today.setMinutes(0);
-  today.setSeconds(0);
+  const [selectedDay, setSelectedDay] = useState<CalendarDay>([today.getFullYear(), today.getMonth(), today.getDate()]);
 
-  const [selectedDay, setSelectedDay] = useState(Number(today));
 
-  const nextDay = new Date(selectedDay);
-  nextDay.setDate(nextDay.getDate() + 1);
+  const filteredFoodsEaten = foodsEaten.filter((food) => {
+    const foodDate = new Date();
+    foodDate.setFullYear(food.date[0]);
+    foodDate.setMonth(food.date[1]);
+    foodDate.setDate(food.date[2]);
+    
 
-  const filteredFoodsEaten = foodsEaten.filter(
-    (foodEaten) =>
-      foodEaten.date > selectedDay && foodEaten.date < Number(nextDay)
-  );
+    const today = new Date();
+    today.setMonth(selectedDay[1]);
+    today.setFullYear(selectedDay[0]);
+    today.setDate(selectedDay[2]);
 
+    const yesterday = new Date();
+    yesterday.setMonth(selectedDay[1]);
+    yesterday.setFullYear(selectedDay[0]);
+    yesterday.setDate(selectedDay[2]);
+    yesterday.setDate(yesterday.getDate() - 1);
+
+    return (foodDate <= today && foodDate > yesterday);
+  });
   return (
     <div className="app pt-4">
       <div className="container">
@@ -55,15 +65,23 @@ function App() {
           <div className="col-lg-5">
             <DateSwitcher
               selectedDay={selectedDay}
-              getNextDate={() => {
-                const date = new Date(selectedDay);
-                date.setDate(date.getDate() + 1);
-                setSelectedDay(Number(date));
+              goToNextDay={() => {
+                const today = new Date();
+                today.setMonth(selectedDay[1]);
+                today.setFullYear(selectedDay[0]);
+                today.setDate(selectedDay[2]);
+                today.setDate(today.getDate() + 1);
+                const tomorrow: CalendarDay = [today.getFullYear(), today.getMonth(), today.getDate()];
+                setSelectedDay(tomorrow);
               }}
-              getPrevDate={() => {
-                const date = new Date(selectedDay);
-                date.setDate(date.getDate() - 1);
-                setSelectedDay(Number(date));
+              goToPreviousDay={() => {
+                const today = new Date();
+                today.setMonth(selectedDay[1]);
+                today.setFullYear(selectedDay[0]);
+                today.setDate(selectedDay[2]);
+                today.setDate(today.getDate() - 1);
+                const yesterday: CalendarDay = [today.getFullYear(), today.getMonth(), today.getDate()];
+                setSelectedDay(yesterday);
               }}
             />
           </div>
@@ -127,7 +145,6 @@ function App() {
                 ];
                 setFoodsEaten(foodsEatenNew);
                 saveToLocalStorage(foodsEatenNew);
-                console.log(new Date(selectedDay))
               }}
               foodList={foodList}
               selectedMeal={selectedMeal}

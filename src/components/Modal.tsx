@@ -2,12 +2,13 @@ import React, { FC, useState, useEffect } from "react";
 import { Food, FoodEaten } from "../types/Food";
 import FoodItem from "./FoodItem";
 import DonutChart from "./DonutChart";
+import { CalendarDay } from "../types/Date";
 
 export const Modal: FC<{
   foodList: Food[];
   selectedMeal: string;
   foodsEaten: FoodEaten[];
-  selectedDay: number;
+  selectedDay: CalendarDay;
   onProcess: (foodEaten: FoodEaten) => void;
   selectedFood: Food|null;
   onSelectFood: (food: Food) => void;
@@ -182,7 +183,7 @@ export const Modal: FC<{
                       ...selectedFood,
                       meal: selectedMeal || "breakfast",
                       quantity,
-                      date: Number(selectedDay + 1),
+                      date: selectedDay,
                     };
                     onProcess(foodEaten);
                     setQuantity(1);

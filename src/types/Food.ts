@@ -1,3 +1,5 @@
+import { CalendarDay } from "./Date";
+
 export type Food = {
     id: string;
     name: string;
@@ -11,5 +13,5 @@ export type Food = {
   export type FoodEaten = Food & {
     meal: string;
     quantity: number;
-    date: Number;
+    date: CalendarDay;
   };
