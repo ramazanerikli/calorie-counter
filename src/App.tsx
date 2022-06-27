@@ -109,7 +109,7 @@ function App() {
             </div>
           </div>
 
-        <div className="row">
+          <div className="row mt-4 mt-lg-0 mt-md-0">
           <div className="col-lg-5">
             <ChartCard
               foodList={foodList}
