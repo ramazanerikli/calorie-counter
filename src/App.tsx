@@ -64,7 +64,7 @@ function App() {
     <div className="app">
       <div className="container">
           <div className="app-header shadow-sm bg-white mt-4">
-            <div className="row">
+          <div className="row mt-4 mt-md-4 mt-lg-0">
               <div className="col-lg-5">
                 <DateSwitcher
                   selectedDay={selectedDay}
