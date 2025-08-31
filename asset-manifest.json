@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/calorie-counter/static/css/main.b1770ceb.css",
-    "main.js": "/calorie-counter/static/js/main.ba9fcee5.js",
-    "static/js/787.9e87e983.chunk.js": "/calorie-counter/static/js/787.9e87e983.chunk.js",
+    "main.css": "/calorie-counter/static/css/main.3b9f0c8c.css",
+    "main.js": "/calorie-counter/static/js/main.0a876c52.js",
+    "static/js/453.19a81257.chunk.js": "/calorie-counter/static/js/453.19a81257.chunk.js",
     "index.html": "/calorie-counter/index.html",
-    "main.b1770ceb.css.map": "/calorie-counter/static/css/main.b1770ceb.css.map",
-    "main.ba9fcee5.js.map": "/calorie-counter/static/js/main.ba9fcee5.js.map",
-    "787.9e87e983.chunk.js.map": "/calorie-counter/static/js/787.9e87e983.chunk.js.map"
+    "main.3b9f0c8c.css.map": "/calorie-counter/static/css/main.3b9f0c8c.css.map",
+    "main.0a876c52.js.map": "/calorie-counter/static/js/main.0a876c52.js.map",
+    "453.19a81257.chunk.js.map": "/calorie-counter/static/js/453.19a81257.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1770ceb.css",
-    "static/js/main.ba9fcee5.js"
+    "static/css/main.3b9f0c8c.css",
+    "static/js/main.0a876c52.js"
   ]
 }
